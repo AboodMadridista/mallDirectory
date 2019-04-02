@@ -15,7 +15,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->string('name');
-            $table->increments('lotNumber')->unique();
+            $table->increments('lotNumber');
             $table->string('zone');
             $table->integer('floorLevel');
             $table->string('catrgory');
